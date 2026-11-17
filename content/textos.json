@@ -1,0 +1,246 @@
+{
+  "contacto": {
+    "whatsapp": "573156456363",
+    "whatsapp_visible": "+57 315 645 6363",
+    "correo": "laurad.beltrana@gmail.com",
+    "behance": "Laura_Beltran"
+  },
+  "es": {
+    "inicio": {
+      "titulo": "PORTAFOLIO",
+      "anio": "2026"
+    },
+    "menu": {
+      "sobre_mi": "SOBRE MÍ",
+      "branding": "BRANDING",
+      "social": "SOCIAL MEDIA",
+      "murales": "MURALES",
+      "galeria": "GALERÍA"
+    },
+    "sobre_mi": {
+      "saludo": "Hola, Soy",
+      "nombre": "Laura",
+      "apellido": "Beltrán",
+      "bio": "Diseñadora Gráfica y Comunicadora Social en formación, con experiencia en marca, comunicación institucional, creación de contenidos y desarrollo de campañas. He participado en la conceptualización y ejecución de estrategias de comunicación, construcción de identidad visual y producción de piezas para diferentes canales y audiencias.\n\nCombino pensamiento estratégico, creatividad y capacidad de ejecución para transformar objetivos de comunicación en conceptos, campañas y soluciones visuales coherentes con la identidad de cada marca.",
+      "educacion_titulo": "Educación",
+      "educacion": [
+        {
+          "lugar": "Colegio Cafam (2007 - 2019)",
+          "titulo": "Bachiller Bilingüe"
+        },
+        {
+          "lugar": "Universidad Santo Tomás (2020 - 2024)",
+          "titulo": "Diseñadora Gráfica"
+        },
+        {
+          "lugar": "Universidad Santo Tomás (2021 - actualidad)",
+          "titulo": "Comunicadora Social para la Paz"
+        }
+      ],
+      "experiencia_titulo": "Experiencia",
+      "experiencia": [
+        {
+          "empresa": "Fundación Cardioinfantil – LaCardio",
+          "cargo": "Profesional de Marca y Comunicaciones | 2024–Actualidad",
+          "tareas": [
+            "Desarrollo de piezas y contenidos para iniciativas institucionales, campañas y proyectos de comunicación interna y externa.",
+            "Conceptualización y diseño de soluciones visuales alineadas con la identidad de marca y los objetivos de comunicación.",
+            "Participación en la planeación y producción de contenidos audiovisuales, eventos y acciones de comunicación.",
+            "Articulación con diferentes áreas para comprender necesidades y convertirlas en propuestas creativas y entregables de comunicación."
+          ]
+        },
+        {
+          "empresa": "Opyt Producciones",
+          "cargo": "Coordinadora creativa de cuenta | 2023–2024",
+          "tareas": [
+            "Creación de piezas gráficas y contenidos para canales digitales y redes sociales.",
+            "Planeación de parrillas de contenido y apoyo en la ejecución de estrategias digitales.",
+            "Desarrollo de propuestas visuales y coordinación de requerimientos creativos para cuentas y clientes."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Diseño gráfico e ilustración | Actualidad",
+          "tareas": [
+            "Desarrollo de proyectos de diseño gráfico e ilustración para necesidades de comunicación y expresión visual."
+          ]
+        }
+      ],
+      "skills_titulo": "Skills y Software",
+      "skills": [
+        "Estrategia y comunicación de marca",
+        "Diseño de campañas",
+        "Branding e identidad visual",
+        "Comunicación institucional",
+        "Creación y estrategia de contenidos",
+        "Diseño gráfico digital e impreso",
+        "Conceptualización creativa",
+        "Gestión de redes sociales",
+        "Adobe Creative Cloud"
+      ]
+    },
+    "branding": {
+      "titulo": "BRANDING",
+      "proyecto_1": "Proyecto Re Make",
+      "proyecto_2": "Proyecto Venture Team"
+    },
+    "social": {
+      "titulo": "SOCIAL MEDIA"
+    },
+    "murales": {
+      "titulo": "MURALES",
+      "mural_1": "MAR",
+      "mural_2": "SELVA"
+    },
+    "galeria": {
+      "titulo": "GALERÍA",
+      "color": {
+        "linea_1": "LÁPICES DE",
+        "linea_2": "COLOR",
+        "texto": "Retratos de fauna en lápices de color sobre papel. Construyo el pelaje, la luz y la mirada capa por capa, para que cada animal se sienta vivo y cercano."
+      },
+      "dibujo": {
+        "linea_1": "LÁPICES DE",
+        "linea_2": "DIBUJO",
+        "texto": "Estudios de anatomía en grafito: el esqueleto humano en distintas vistas y en movimiento. Un ejercicio de observación y proporción que sostiene todo mi trabajo de ilustración."
+      },
+      "gouache": {
+        "linea_1": "ACUARELAS Y",
+        "linea_2": "GOUACHE",
+        "texto": "Retratos en acuarela y gouache construidos con planos de color. Dos rostros que dialogan entre la tristeza y la alegría, con flores que nacen donde algo se rompió."
+      },
+      "texturas": {
+        "linea_1": "DIBUJO DE",
+        "linea_2": "TEXTURAS",
+        "texto": "Bodegón en grafito con objetos cotidianos: una cuchara de madera, un salero, un dado y una taza. Cada material pide un trazo distinto para mostrar su brillo y su peso."
+      },
+      "firebee": {
+        "linea_1": "PERIÓDICO\nESPECIALIZADO",
+        "linea_2": "FIREBEE"
+      },
+      "longplay": {
+        "linea_1": "REVISTA\nESPECIALIZADA",
+        "linea_2": "LONG PLAY"
+      }
+    }
+  },
+  "en": {
+    "inicio": {
+      "titulo": "PORTFOLIO",
+      "anio": "2026"
+    },
+    "menu": {
+      "sobre_mi": "ABOUT ME",
+      "branding": "BRANDING",
+      "social": "SOCIAL MEDIA",
+      "murales": "MURALS",
+      "galeria": "GALLERY"
+    },
+    "sobre_mi": {
+      "saludo": "Hi, I'm",
+      "nombre": "Laura",
+      "apellido": "Beltrán",
+      "bio": "Graphic Designer and Social Communication student with experience in branding, institutional communication, content creation and campaign development. I have taken part in conceptualizing and carrying out communication strategies, building visual identities and producing pieces for different channels and audiences.\n\nI combine strategic thinking, creativity and execution to turn communication goals into concepts, campaigns and visual solutions that stay true to each brand's identity.",
+      "educacion_titulo": "Education",
+      "educacion": [
+        {
+          "lugar": "Colegio Cafam (2007 - 2019)",
+          "titulo": "Bilingual high school diploma"
+        },
+        {
+          "lugar": "Universidad Santo Tomás (2020 - 2024)",
+          "titulo": "Graphic Designer"
+        },
+        {
+          "lugar": "Universidad Santo Tomás (2021 - present)",
+          "titulo": "Social Communication for Peace"
+        }
+      ],
+      "experiencia_titulo": "Experience",
+      "experiencia": [
+        {
+          "empresa": "Fundación Cardioinfantil – LaCardio",
+          "cargo": "Brand and Communications Professional | 2024–Present",
+          "tareas": [
+            "Producing pieces and content for institutional initiatives, campaigns, and internal and external communication projects.",
+            "Conceptualizing and designing visual solutions aligned with brand identity and communication goals.",
+            "Taking part in planning and producing audiovisual content, events and communication actions.",
+            "Working with different teams to understand their needs and turn them into creative proposals and communication deliverables."
+          ]
+        },
+        {
+          "empresa": "Opyt Producciones",
+          "cargo": "Creative Account Coordinator | 2023–2024",
+          "tareas": [
+            "Creating graphic pieces and content for digital channels and social media.",
+            "Planning content calendars and supporting the execution of digital strategies.",
+            "Developing visual proposals and coordinating creative requests for accounts and clients."
+          ]
+        },
+        {
+          "empresa": "Freelance",
+          "cargo": "Graphic Design and Illustration | Present",
+          "tareas": [
+            "Graphic design and illustration projects for communication and visual expression needs."
+          ]
+        }
+      ],
+      "skills_titulo": "Skills & Software",
+      "skills": [
+        "Brand strategy and communication",
+        "Campaign design",
+        "Branding and visual identity",
+        "Institutional communication",
+        "Content creation and strategy",
+        "Digital and print graphic design",
+        "Creative concept development",
+        "Social media management",
+        "Adobe Creative Cloud"
+      ]
+    },
+    "branding": {
+      "titulo": "BRANDING",
+      "proyecto_1": "Re Make Project",
+      "proyecto_2": "Venture Team Project"
+    },
+    "social": {
+      "titulo": "SOCIAL MEDIA"
+    },
+    "murales": {
+      "titulo": "MURALS",
+      "mural_1": "MAR",
+      "mural_2": "SELVA"
+    },
+    "galeria": {
+      "titulo": "GALLERY",
+      "color": {
+        "linea_1": "COLORED",
+        "linea_2": "PENCILS",
+        "texto": "Wildlife portraits in colored pencil on paper. I build fur, light and gaze layer by layer so every animal feels alive and close."
+      },
+      "dibujo": {
+        "linea_1": "PENCIL",
+        "linea_2": "DRAWING",
+        "texto": "Graphite anatomy studies: the human skeleton from different views and in motion. An exercise in observation and proportion that supports all my illustration work."
+      },
+      "gouache": {
+        "linea_1": "WATERCOLOR &",
+        "linea_2": "GOUACHE",
+        "texto": "Watercolor and gouache portraits built from planes of color. Two faces in dialogue between sadness and joy, with flowers growing where something broke."
+      },
+      "texturas": {
+        "linea_1": "DRAWING",
+        "linea_2": "TEXTURES",
+        "texto": "A graphite still life of everyday objects: a wooden spoon, a salt shaker, a die and a mug. Each material calls for a different stroke to show its shine and weight."
+      },
+      "firebee": {
+        "linea_1": "SPECIALIZED\nNEWSPAPER",
+        "linea_2": "FIREBEE"
+      },
+      "longplay": {
+        "linea_1": "SPECIALIZED\nMAGAZINE",
+        "linea_2": "LONG PLAY"
+      }
+    }
+  }
+}

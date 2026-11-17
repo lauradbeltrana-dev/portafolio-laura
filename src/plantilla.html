@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Laura Beltrán Portafolio</title>
+<meta name="description" content="{{DESCRIPCION}}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Laura Beltrán Portafolio">
+<meta property="og:description" content="{{DESCRIPCION}}">
+<meta property="og:image" content="{{SITIO}}/img/p0_0.webp">
+<meta name="theme-color" content="#ffedc6">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barriecito&family=Montserrat:wght@400;500;600;800;900&display=swap">
+<style>
+#toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);z-index:99;max-width:min(420px,calc(100vw - 32px));background:#1a1a1a;color:#fff;font:500 14px/1.4 Montserrat,system-ui,sans-serif;padding:12px 18px;border-radius:14px;box-shadow:0 8px 24px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:opacity .3s,transform .3s;text-align:center}
+#toast b{display:block;font-weight:700;margin-bottom:2px}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+:root{--ink:#000;--cream:#ffedc6;--lilac:#c9b8eb;--mauve:#bc88c0;color-scheme:light}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:#000;font-family:"Montserrat",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.view,.foot{display:block;max-width:1920px;margin:0 auto}.view[hidden]{display:none}
+.view{position:relative;container-type:inline-size;--u:calc(100cqw / 1920);overflow-x:clip}
+.ch{position:relative;overflow:hidden}.ch.spill{overflow:visible}
+.foot{container-type:inline-size}
+.bgw{position:relative}
+.bgw img.bg,.foot>img.bg{display:block;width:100%;height:auto}
+.t{z-index:3}
+.ly{position:absolute;left:calc(var(--x) * var(--u));top:calc(var(--y) * var(--u));width:calc(var(--w) * var(--u));height:calc(var(--h) * var(--u));z-index:2;transform:translate3d(0,var(--py,0px),0);will-change:transform}
+.ly.over{z-index:4}
+.mu{position:absolute;left:calc(var(--x) * var(--u));top:calc(var(--y) * var(--u));width:calc(var(--w) * var(--u));height:calc(var(--h) * var(--u));overflow:hidden;z-index:2}
+.mu>img{position:absolute;display:block}
+.mu .mubg{inset:0;width:100%;height:100%}
+.mu .pc{left:var(--px);top:var(--py);width:var(--pw);height:var(--ph);transform-origin:var(--ox,50%) var(--oy,50%)}
+.anim .mu.on .pc[class*=" a-"]{animation-duration:var(--d);animation-delay:var(--dl);animation-iteration-count:infinite;animation-timing-function:ease-in-out;will-change:transform}
+.anim .mu.on .a-float{animation-name:mu-float}.anim .mu.on .a-bob{animation-name:mu-bob}.anim .mu.on .a-bob2{animation-name:mu-bob2}
+.anim .mu.on .a-sway{animation-name:mu-sway}.anim .mu.on .a-sway2{animation-name:mu-sway2}.anim .mu.on .a-swim{animation-name:mu-swim}
+.anim .mu.on .a-spin{animation-name:mu-spin}.anim .mu.on .a-pad{animation-name:mu-pad}.anim .mu.on .a-hop{animation-name:mu-hop}.anim .mu.on .a-tilt{animation-name:mu-tilt}
+@keyframes mu-float{0%,100%{transform:none}50%{transform:translateY(-2.5%) rotate(-1.5deg)}}
+@keyframes mu-bob{0%,100%{transform:none}50%{transform:translateY(-2.2%) rotate(1.4deg)}}
+@keyframes mu-bob2{0%,100%{transform:none}50%{transform:translateY(-3%)}}
+@keyframes mu-sway{0%,100%{transform:rotate(-3deg) skewX(1deg)}50%{transform:rotate(3deg) skewX(-1deg)}}
+@keyframes mu-sway2{0%,100%{transform:rotate(-1.2deg)}50%{transform:rotate(1.2deg)}}
+@keyframes mu-swim{0%,100%{transform:none}25%{transform:translate(-7%,-5%) rotate(-4deg)}50%{transform:translate(-12%,0)}75%{transform:translate(-6%,5%) rotate(4deg)}}
+@keyframes mu-spin{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
+@keyframes mu-pad{0%,100%{transform:rotate(-1.5deg)}50%{transform:translateY(-4%) rotate(1.5deg)}}
+@keyframes mu-hop{0%,62%,100%{transform:none}70%{transform:translateY(-16%) scale(.97,1.04)}78%{transform:translateY(0) scale(1.05,.95)}84%{transform:none}}
+@keyframes mu-tilt{0%,100%{transform:none}30%{transform:rotate(-6deg)}55%{transform:rotate(2deg)}}
+
+.lm{width:100%;height:100%;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.lm img{display:block;width:100%;height:100%}
+.ch>*{--u:calc(100cqw / 1920)}
+.t{position:absolute;margin:0;left:calc(var(--x) * var(--u));top:calc(var(--y) * var(--u));font-size:calc(var(--s) * var(--u));line-height:calc(var(--lh) * var(--u));white-space:nowrap;font-weight:400;letter-spacing:0}
+.t.r{left:auto;right:calc(var(--rx) * var(--u));text-align:right}
+.t.c{left:0;right:0;text-align:center}
+.t.w{white-space:normal;width:calc(var(--w) * var(--u))}
+.t b{font-weight:600}.t .job{display:block;margin-bottom:1.1em}.t .job:last-child{margin-bottom:0}.t .li{display:block;padding-left:.7em;text-indent:-.7em;margin-top:.25em}
+.bar{font-family:"Barriecito","Comic Sans MS",cursive}
+.mon{font-family:"Montserrat",system-ui,sans-serif}
+.anim .sl,.anim .sw{display:inline-block;white-space:pre;text-indent:0}
+.anim .sl{opacity:0;transform:translateY(.6em)}
+.anim .ttl.in .sl{animation:lb-bounce .75s cubic-bezier(.34,1.56,.64,1) both;animation-delay:calc(var(--i) * 32ms + 60ms)}
+.anim .sw{opacity:0;transform:translateY(.45em)}
+.anim .cp.in .sw{animation:lb-soft .7s cubic-bezier(.34,1.25,.64,1) both;animation-delay:calc(var(--i) * 7ms + 200ms)}
+@keyframes lb-bounce{0%{opacity:0;transform:translateY(.6em)}55%{opacity:1}100%{opacity:1;transform:none}}
+@keyframes lb-soft{0%{opacity:0;transform:translateY(.45em)}60%{opacity:1}100%{opacity:1;transform:none}}
+.anim .ly .lm{opacity:0;transition:opacity 1.2s ease,transform .6s cubic-bezier(.2,.8,.2,1)}
+.anim .ly.in .lm{opacity:1}
+.anim img.rv{opacity:0;transform:scale(1.035);transition:opacity 1s ease,transform 1.4s cubic-bezier(.2,.8,.2,1)}
+.anim img.rv.in{opacity:1;transform:none}
+.anim .t.done .sl,.anim .t.done .sw{animation:none;opacity:1;transform:none}
+.igs{display:flex;justify-content:center;align-items:flex-start;gap:calc(70 * var(--u));padding:calc(110 * var(--u)) calc(60 * var(--u)) calc(150 * var(--u))}
+.ig{position:relative;flex:0 0 calc(520 * var(--u));transform:translateX(var(--dx))}
+.ig-frame{position:absolute;inset:0;width:100%;height:100%;display:block;pointer-events:none;z-index:2;user-select:none}
+.ig-track{position:absolute;left:calc(var(--px) - 1px);top:calc(var(--py) - 1px);width:calc(var(--pw) + 2px);height:calc(var(--ph) + 2px);display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;background:#eee;z-index:1;outline:none}
+.ig-track::-webkit-scrollbar{display:none}
+.anim .ig{opacity:0;translate:0 calc(40 * var(--u));transition:opacity 1s ease,translate 1.1s cubic-bezier(.2,.8,.2,1)}
+.anim .ig.in.ok{opacity:1;translate:none}
+.anim .ig:nth-child(2){transition-delay:.15s}.anim .ig:nth-child(3){transition-delay:.3s}
+.ig-track img{flex:0 0 100%;width:100%;height:100%;object-fit:cover;scroll-snap-align:center;scroll-snap-stop:always;display:block;user-select:none;-webkit-user-drag:none}
+.ig-nav{position:absolute;top:calc(var(--py) + var(--ph) / 2);transform:translateY(-50%);z-index:3;width:28px;height:28px;border-radius:50%;border:0;padding:0;background:rgba(255,255,255,.85);box-shadow:0 1px 4px rgba(0,0,0,.25);display:grid;place-items:center;cursor:pointer;transition:background .2s,transform .2s}
+.ig-nav svg{width:16px;height:16px;fill:none;stroke:#262626;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.ig-nav:hover{background:#fff;transform:translateY(-50%) scale(1.08)}
+.ig-nav.prev{left:calc(var(--px) + 10px)}.ig-nav.next{left:calc(var(--px) + var(--pw) - 38px)}
+.ig-nav[hidden]{display:none}
+.ig-dots{position:absolute;left:var(--px);width:var(--pw);top:var(--dy);transform:translateY(-50%);display:flex;justify-content:center;gap:4px;z-index:3}
+.ig-dots i{width:6px;height:6px;border-radius:50%;background:#a8a8a8;transition:background .2s}
+.ig-dots i.on{background:#0095f6}
+.ig-track:focus-visible{outline:2px solid #0095f6;outline-offset:2px}
+@media (hover:none),(max-width:700px){.ig-nav{display:none}}
+@media (max-width:700px){.anim .ig{transition-delay:0s!important}.igs{flex-direction:column;align-items:center;gap:44px;padding:36px 0 56px}.ig{flex:none;width:min(90vw,420px)}}
+@media (hover:hover) and (pointer:fine) and (min-width:701px){
+  .ly.in.done .lm:hover{transform:translateY(calc(-14 * var(--u))) rotate(-.6deg) scale(1.012)}
+}
+.nav{position:absolute;top:calc(85 * var(--u));right:calc(96 * var(--u));display:flex;align-items:center;gap:calc(54 * var(--u));font-family:"Barriecito",cursive;font-size:max(calc(38.2 * var(--u)),12px);line-height:1.38;z-index:2}
+.nav a{color:var(--mauve);text-decoration:none;transition:color .2s}
+.nav a,.lang{position:relative}
+.drop{position:absolute;left:50%;top:50%;pointer-events:none;border-radius:50% 50% 50% 50% / 60% 60% 40% 40%;will-change:transform,opacity}
+.nav a:hover,.nav a[aria-current="page"]{color:#e9d9ff}
+.lang{font:inherit;color:#000;background:var(--lilac);border:0;border-radius:999px;padding:.05em .6em;cursor:pointer;line-height:1.3}
+.lang:hover{background:#e9d9ff}
+.hot{position:absolute;left:calc(var(--x) * var(--u));top:calc(var(--y) * var(--u));width:calc(var(--w) * var(--u));height:calc(var(--h) * var(--u));border-radius:50%}
+.hot.logo{--x:70;--y:50;--w:180;--h:170}
+.circ{position:absolute;left:calc(var(--x) * var(--u));top:calc(var(--y) * var(--u));width:calc(var(--w) * var(--u));height:calc(var(--h) * var(--u));border-radius:50%;background:#fff;color:var(--mauve);display:grid;place-items:center}
+.circ svg{width:58%;height:58%}
+.hot:focus-visible,.circ:focus-visible,.nav a:focus-visible,.lang:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.contact-line{position:absolute;left:calc(1276 * var(--u));top:calc(200 * var(--u));width:calc(550 * var(--u));text-align:right;margin:0;font-size:max(calc(18 * var(--u)),10px);color:#5e4a7a;user-select:all}
+@media (max-width:700px){
+  .ch:has(.copy){display:flex;flex-direction:column}
+  .ch:has(.copy)>.bgw{order:1}
+  .ch .copy{order:2;position:static;width:auto;white-space:normal;text-align:left;font-size:15px;line-height:1.55;padding:20px 20px 28px;background:var(--mb,transparent)}
+  .ch.textfirst{padding-top:12px}
+  .ch.textfirst>.bgw{order:9}
+  .ch.textfirst .t{position:static;width:auto;padding:4px 20px 12px;white-space:normal}
+  .ch.textfirst .mob{font-size:28px;line-height:1.2;padding-top:16px}
+  .ch.textfirst .t:nth-of-type(1){order:1}.ch.textfirst .t:nth-of-type(2){order:2}.ch.textfirst .t:nth-of-type(3){order:3}
+  .ch.textfirst .t:nth-of-type(4){order:4}.ch.textfirst .t:nth-of-type(5){order:5}.ch.textfirst .t:nth-of-type(6){order:6}
+  .nav{gap:9px;top:14px;right:10px}
+  .hot.logo{--y:30}
+  .contact-line{display:none}
+  .ch.spill{overflow:visible}
+  .ly{display:none}
+  .ch[style*="--mo"] .t:not(.copy){top:calc((var(--y) + var(--mo)) * var(--u))}
+  .anim img.rvm{opacity:0;transform:scale(1.03);transition:opacity .9s ease,transform 1.2s cubic-bezier(.2,.8,.2,1)}
+  .anim img.rvm.in{opacity:1;transform:none}
+  .anim .cp .sw{opacity:1;transform:none;animation:none!important}
+  .anim .cp{opacity:0;transform:translateY(14px);transition:opacity .7s ease .15s,transform .7s cubic-bezier(.34,1.25,.64,1) .15s}
+  .anim .cp.in{opacity:1;transform:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<main class="view" id="v-sobre-mi" data-name="Sobre mí"><div class="ch "><div class="bgw"><img class="bg" src="img/p0_0.webp" width="1920" height="1060" alt="" fetchpriority=high></div><h1 class="t mon" style="--y:189.1;--s:148.2;--lh:213.9;color:#cab9eb;--x:426.9;font-weight:800" data-i="h_port">PORTAFOLIO</h1><div class="t bar" style="--y:276.0;--s:130.1;--lh:180.4;color:#ffeec7;--x:1290.9" data-i="h_2025">2026</div><nav class="nav" aria-label="Menú"><a href="#sobre-mi" data-i="nav_about">SOBRE MÍ</a><a href="#branding" data-i="nav_brand">BRANDING</a><a href="#social-media" data-i="nav_social">SOCIAL MEDIA</a><a href="#murales" data-i="nav_mur">MURALES</a><a href="#galeria" data-i="nav_gal">GALERÍA</a><button type="button" class="lang" data-lang aria-label="Cambiar idioma / Change language">EN</button></nav><a class="hot logo" href="#sobre-mi" aria-label="Laura Beltrán, inicio"></a></div><div class="ch "><div class="bgw"><picture><source media="(max-width:700px)" srcset="img/m/p0_1.webp"><img class="bg" src="img/p0_1.webp" width="1920" height="900" alt="" ></picture><div class="ly" data-d="0.05" style="--x:126;--y:54;--w:572;--h:812"><div class="lm"><img src="img/L_foto.webp" width="572" height="812" alt="" loading="lazy"></div></div></div><div class="t bar" style="--y:48.6;--s:53.7;--lh:74.5;color:#000000;--x:763.6" data-i="hola">Hola, Soy</div><div class="t bar" style="--y:99.2;--s:130.1;--lh:180.4;color:#bc88c0;--x:897.6" data-i="laura">Laura</div><div class="t bar" style="--y:210.3;--s:130.1;--lh:180.4;color:#bc88c0;--x:1141.8" data-i="beltran">Beltrán</div><p class="t mon copy w" style="--y:400.1;--s:30;--lh:34.0;color:#000000;--x:758.6;--w:1000" data-i="bio">Diseñadora Gráfica y Comunicadora Social en formación, con experiencia en marca, comunicación institucional, creación de contenidos y desarrollo de campañas. He participado en la conceptualización y ejecución de estrategias de comunicación, construcción de identidad visual y producción de piezas para diferentes canales y audiencias.<br><br>Combino pensamiento estratégico, creatividad y capacidad de ejecución para transformar objetivos de comunicación en conceptos, campañas y soluciones visuales coherentes con la identidad de cada marca.</p></div><div class="ch textfirst"><div class="bgw"><img class="bg" src="img/p0_2.webp" width="1920" height="1961" alt="" ></div><div class="t bar mob" style="--y:115.5;--s:57;--lh:79.0;color:#ca7578;--x:137.7" data-i="edu_t">Educación</div><p class="t mon copy w" style="--y:216.4;--s:32;--lh:44.0;color:#000000;--x:137.7;--w:660" data-i="edu"><b>Colegio Cafam (2007 - 2019)</b><br>Bachiller Bilingüe<br><br><b>Universidad Santo Tomás (2020 - 2024)</b><br>Diseñadora Gráfica<br><br><b>Universidad Santo Tomás (2021 - actualidad)</b><br>Comunicadora Social para la Paz</p><div class="t bar mob" style="--y:696.4;--s:57;--lh:79.1;color:#ca7578;--x:137.7" data-i="exp_t">Experiencia</div><p class="t mon copy w" style="--y:807.8;--s:25;--lh:33.0;color:#000000;--x:137.7;--w:650" data-i="exp"><span class="job"><b>Fundación Cardioinfantil – LaCardio</b><br>Profesional de Marca y Comunicaciones | 2024–Actualidad<span class="li">• Desarrollo de piezas y contenidos para iniciativas institucionales, campañas y proyectos de comunicación interna y externa.</span><span class="li">• Conceptualización y diseño de soluciones visuales alineadas con la identidad de marca y los objetivos de comunicación.</span><span class="li">• Participación en la planeación y producción de contenidos audiovisuales, eventos y acciones de comunicación.</span><span class="li">• Articulación con diferentes áreas para comprender necesidades y convertirlas en propuestas creativas y entregables de comunicación.</span></span><span class="job"><b>Opyt Producciones</b><br>Coordinadora creativa de cuenta | 2023–2024<span class="li">• Creación de piezas gráficas y contenidos para canales digitales y redes sociales.</span><span class="li">• Planeación de parrillas de contenido y apoyo en la ejecución de estrategias digitales.</span><span class="li">• Desarrollo de propuestas visuales y coordinación de requerimientos creativos para cuentas y clientes.</span></span><span class="job"><b>Freelance</b><br>Diseño gráfico e ilustración | Actualidad<span class="li">• Desarrollo de proyectos de diseño gráfico e ilustración para necesidades de comunicación y expresión visual.</span></span></p><div class="t bar mob" style="--y:115.5;--s:57;--lh:79.0;color:#ca7578;--x:915.8" data-i="sk_t">Skills y Software</div><p class="t mon copy w" style="--y:235.0;--s:26;--lh:31.0;color:#000000;--x:1281.6;--w:620" data-i="sk">Estrategia y comunicación de marca<br>Diseño de campañas<br>Branding e identidad visual<br>Comunicación institucional<br>Creación y estrategia de contenidos<br>Diseño gráfico digital e impreso<br>Conceptualización creativa<br>Gestión de redes sociales<br>Adobe Creative Cloud</p></div></main><main class="view" id="v-branding" data-name="Branding" hidden><div class="ch "><div class="bgw"><img class="bg" src="img/p1_0.webp" width="1920" height="1100" alt="" fetchpriority=high></div><h1 class="t bar c" style="--y:191.0;--s:311.3;--lh:431.8;color:#cab9eb" data-i="h_brand">BRANDING</h1><nav class="nav" aria-label="Menú"><a href="#sobre-mi" data-i="nav_about">SOBRE MÍ</a><a href="#branding" data-i="nav_brand">BRANDING</a><a href="#social-media" data-i="nav_social">SOCIAL MEDIA</a><a href="#murales" data-i="nav_mur">MURALES</a><a href="#galeria" data-i="nav_gal">GALERÍA</a><button type="button" class="lang" data-lang aria-label="Cambiar idioma / Change language">EN</button></nav><a class="hot logo" href="#sobre-mi" aria-label="Laura Beltrán, inicio"></a></div><div class="ch "><div class="bgw"><img class="bg rv rvm" src="img/p1_1.webp" width="1920" height="4060" alt="" loading=lazy></div><div class="t mon" style="--y:63.7;--s:56.2;--lh:81.2;color:#bc88c0;--x:98.1;font-weight:600" data-i="remake">Proyecto Re Make</div></div><div class="ch "><div class="bgw"><img class="bg rv rvm" src="img/p1_2.webp" width="1920" height="4492" alt="" loading=lazy></div><div class="t mon" style="--y:56.7;--s:56.2;--lh:81.2;color:#bc88c0;--x:98.1;font-weight:600" data-i="venture">Proyecto Venture Team</div></div></main><main class="view" id="v-galeria" data-name="Galería" hidden><div class="ch "><div class="bgw"><img class="bg" src="img/p2_0.webp" width="1920" height="1235" alt="" fetchpriority=high></div><h1 class="t bar c" style="--y:191.0;--s:311.3;--lh:431.8;color:#cab9eb" data-i="h_gal">GALERÍA</h1><nav class="nav" aria-label="Menú"><a href="#sobre-mi" data-i="nav_about">SOBRE MÍ</a><a href="#branding" data-i="nav_brand">BRANDING</a><a href="#social-media" data-i="nav_social">SOCIAL MEDIA</a><a href="#murales" data-i="nav_mur">MURALES</a><a href="#galeria" data-i="nav_gal">GALERÍA</a><button type="button" class="lang" data-lang aria-label="Cambiar idioma / Change language">EN</button></nav><a class="hot logo" href="#sobre-mi" aria-label="Laura Beltrán, inicio"></a></div><div class="ch spill" style="z-index:7"><div class="bgw"><picture><source media="(max-width:700px)" srcset="img/m/p2_1.webp"><img class="bg rvm" src="img/p2_1.webp" width="1920" height="1167" alt="" loading=lazy></picture><div class="ly" data-d="0.04" style="--x:210;--y:102;--w:675;--h:963"><div class="lm"><img src="img/L_conejo.webp" width="675" height="963" alt="" loading="lazy"></div></div><div class="ly" data-d="0.08" style="--x:1239;--y:832;--w:611;--h:755"><div class="lm"><img src="img/L_esq1.webp" width="611" height="755" alt="" loading="lazy"></div></div></div><div class="t mon r" style="--y:161.4;--s:107.1;--lh:154.5;color:#ffeec7;--rx:171.1;font-weight:500" data-i="col_s">LÁPICES DE</div><div class="t bar r" style="--y:180.9;--s:324.3;--lh:449.9;color:#ffeec7;--rx:171.7" data-i="col_b">COLOR</div><p class="t mon copy r w" style="--y:595.8;--s:30;--lh:33.6;color:#ffffff;--rx:165.7;--w:780;--mb:#bb87c0" data-i="col_p">Retratos de fauna en lápices de color sobre papel. Construyo el pelaje, la luz y la mirada capa por capa, para que cada animal se sienta vivo y cercano.</p></div><div class="ch spill" style="z-index:6;--mo:362"><div class="bgw"><picture><source media="(max-width:700px)" srcset="img/m/p2_2.webp"><img class="bg rvm" src="img/p2_2.webp" width="1920" height="866" alt="" loading=lazy></picture><div class="ly over" data-d="0.05" style="--x:870;--y:331;--w:731;--h:599"><div class="lm"><img src="img/L_esq2.webp" width="731" height="599" alt="" loading="lazy"></div></div></div><div class="t mon" style="--y:75.2;--s:107.1;--lh:154.6;color:#ca7578;--x:118.4;font-weight:500" data-i="dib_s">LÁPICES DE</div><div class="t bar" style="--y:94.8;--s:324.3;--lh:449.8;color:#ca7578;--x:110.6" data-i="dib_b">DIBUJO</div><p class="t mon copy w" style="--y:504.4;--s:30;--lh:33.6;color:#000000;--x:139.7;--w:590" data-i="dib_p">Estudios de anatomía en grafito: el esqueleto humano en distintas vistas y en movimiento. Un ejercicio de observación y proporción que sostiene todo mi trabajo de ilustración.</p></div><div class="ch "><div class="bgw"><picture><source media="(max-width:700px)" srcset="img/m/p2_3.webp"><img class="bg rvm" src="img/p2_3.webp" width="1920" height="812" alt="" loading=lazy></picture><div class="ly" data-d="0.06" style="--x:114;--y:92;--w:933;--h:627"><div class="lm"><img src="img/L_gouache.webp" width="933" height="627" alt="" loading="lazy"></div></div></div><div class="t mon r" style="--y:141.1;--s:96.7;--lh:139.5;color:#bc88c0;--rx:141.3;font-weight:500" data-i="gou_s">ACUARELAS Y</div><div class="t bar r" style="--y:191.2;--s:208.3;--lh:288.9;color:#bc88c0;--rx:137.2" data-i="gou_b">GOUACHE</div><p class="t mon copy r w" style="--y:458.2;--s:30;--lh:33.6;color:#000000;--rx:129.8;--w:670" data-i="gou_p">Retratos en acuarela y gouache construidos con planos de color. Dos rostros que dialogan entre la tristeza y la alegría, con flores que nacen donde algo se rompió.</p></div><div class="ch "><div class="bgw"><img class="bg rvm" src="img/p2_4.webp" width="1920" height="880" alt="" loading=lazy></div><div class="t mon" style="--y:123.4;--s:99.4;--lh:143.4;color:#ffeec7;--x:116.6;font-weight:500" data-i="tex_s">DIBUJO DE</div><div class="t bar" style="--y:189.7;--s:155.6;--lh:215.8;color:#ffeec7;--x:116.2" data-i="tex_b">TEXTURAS</div><p class="t mon copy w" style="--y:433.1;--s:30;--lh:33.6;color:#ffffff;--x:139.7;--w:590;--mb:#bb87c0" data-i="tex_p">Bodegón en grafito con objetos cotidianos: una cuchara de madera, un salero, un dado y una taza. Cada material pide un trazo distinto para mostrar su brillo y su peso.</p></div><div class="ch "><div class="bgw"><img class="bg rvm" src="img/p2_5.webp" width="1920" height="1540" alt="" loading=lazy></div><div class="t mon r" style="--y:968.2;--s:77.5;--lh:77.2;color:#ffeec7;--rx:116;font-weight:500" data-i="fb_s">PERIÓDICO<br>ESPECIALIZADO</div><div class="t bar r" style="--y:1090.9;--s:208.3;--lh:288.9;color:#ffffff;--rx:116" data-i="fb_b">FIREBEE</div></div><div class="ch "><div class="bgw"><img class="bg rvm" src="img/p2_6.webp" width="1920" height="1807" alt="" loading=lazy></div><div class="t mon" style="--y:1161.0;--s:77.5;--lh:77.1;color:#ffeec7;--x:144.3;font-weight:500" data-i="lp_s">REVISTA<br>ESPECIALIZADA</div><div class="t bar" style="--y:1283.6;--s:208.3;--lh:288.9;color:#ffffff;--x:139.6" data-i="lp_b">LONG PLAY</div></div></main><main class="view" id="v-social-media" data-name="Social media" hidden><div class="ch "><div class="bgw"><img class="bg" src="img/p3_0.webp" width="1920" height="1100" alt="" fetchpriority=high></div><h1 class="t bar c" style="--y:236.5;--s:253.4;--lh:351.5;color:#cab9eb" data-i="h_soc">SOCIAL MEDIA</h1><nav class="nav" aria-label="Menú"><a href="#sobre-mi" data-i="nav_about">SOBRE MÍ</a><a href="#branding" data-i="nav_brand">BRANDING</a><a href="#social-media" data-i="nav_social">SOCIAL MEDIA</a><a href="#murales" data-i="nav_mur">MURALES</a><a href="#galeria" data-i="nav_gal">GALERÍA</a><button type="button" class="lang" data-lang aria-label="Cambiar idioma / Change language">EN</button></nav><a class="hot logo" href="#sobre-mi" aria-label="Laura Beltrán, inicio"></a></div><section class="ch igs" aria-label="Social media"><div class="ig" style="--px:4.741%;--py:19.542%;--pw:87.428%;--ph:42.852%;--dy:64.437%;--dx:1.54%;aspect-ratio:760/1551"><div class="ig-track" tabindex="0" role="group" aria-label="Publicaciones de @pola_deleyva"><img src="img/post_pola1.webp" width="720" height="720" alt="Publicación 1 de 2 de @pola_deleyva" loading="lazy" draggable="false"><img src="img/post_pola2.webp" width="720" height="720" alt="Publicación 2 de 2 de @pola_deleyva" loading="lazy" draggable="false"></div><img class="ig-frame" src="img/ig_pola.webp" width="760" height="1551" alt="Instagram de @pola_deleyva" loading="lazy"><button type="button" class="ig-nav prev" aria-label="Anterior" hidden><svg viewBox="0 0 24 24"><path d="M14.5 6l-6 6 6 6"/></svg></button><button type="button" class="ig-nav next" aria-label="Siguiente"><svg viewBox="0 0 24 24"><path d="M9.5 6l6 6-6 6"/></svg></button><div class="ig-dots" aria-hidden="true"><i class=on></i><i></i></div></div><div class="ig" style="--px:8.757%;--py:19.941%;--pw:87.425%;--ph:43.035%;--dy:64.333%;--dx:-2.47%;aspect-ratio:760/1552"><div class="ig-track" tabindex="0" role="group" aria-label="Publicaciones de @noatucosmetics"><img src="img/post_noatu1.webp" width="720" height="720" alt="Publicación 1 de 3 de @noatucosmetics" loading="lazy" draggable="false"><img src="img/post_noatu2.webp" width="720" height="720" alt="Publicación 2 de 3 de @noatucosmetics" loading="lazy" draggable="false"><img src="img/post_noatu3.webp" width="720" height="720" alt="Publicación 3 de 3 de @noatucosmetics" loading="lazy" draggable="false"></div><img class="ig-frame" src="img/ig_noatu.webp" width="760" height="1552" alt="Instagram de @noatucosmetics" loading="lazy"><button type="button" class="ig-nav prev" aria-label="Anterior" hidden><svg viewBox="0 0 24 24"><path d="M14.5 6l-6 6 6 6"/></svg></button><button type="button" class="ig-nav next" aria-label="Siguiente"><svg viewBox="0 0 24 24"><path d="M9.5 6l6 6-6 6"/></svg></button><div class="ig-dots" aria-hidden="true"><i class=on></i><i></i><i></i></div></div><div class="ig" style="--px:4.793%;--py:20.471%;--pw:87.268%;--ph:42.872%;--dy:64.466%;--dx:1.57%;aspect-ratio:760/1548"><div class="ig-track" tabindex="0" role="group" aria-label="Publicaciones de @somosferiaaura"><img src="img/post_aura1.webp" width="720" height="720" alt="Publicación 1 de 3 de @somosferiaaura" loading="lazy" draggable="false"><img src="img/post_aura2.webp" width="720" height="720" alt="Publicación 2 de 3 de @somosferiaaura" loading="lazy" draggable="false"><img src="img/post_aura3.webp" width="720" height="720" alt="Publicación 3 de 3 de @somosferiaaura" loading="lazy" draggable="false"></div><img class="ig-frame" src="img/ig_aura.webp" width="760" height="1548" alt="Instagram de @somosferiaaura" loading="lazy"><button type="button" class="ig-nav prev" aria-label="Anterior" hidden><svg viewBox="0 0 24 24"><path d="M14.5 6l-6 6 6 6"/></svg></button><button type="button" class="ig-nav next" aria-label="Siguiente"><svg viewBox="0 0 24 24"><path d="M9.5 6l6 6-6 6"/></svg></button><div class="ig-dots" aria-hidden="true"><i class=on></i><i></i><i></i></div></div></section></main><main class="view" id="v-murales" data-name="Murales" hidden><div class="ch "><div class="bgw"><img class="bg" src="img/p2_0.webp" width="1920" height="1235" alt="" fetchpriority=high></div><h1 class="t bar c" style="--y:191.0;--s:311.3;--lh:431.8;color:#cab9eb" data-i="h_mur">MURALES</h1><nav class="nav" aria-label="Menú"><a href="#sobre-mi" data-i="nav_about">SOBRE MÍ</a><a href="#branding" data-i="nav_brand">BRANDING</a><a href="#social-media" data-i="nav_social">SOCIAL MEDIA</a><a href="#murales" data-i="nav_mur">MURALES</a><a href="#galeria" data-i="nav_gal">GALERÍA</a><button type="button" class="lang" data-lang aria-label="Cambiar idioma / Change language">EN</button></nav><a class="hot logo" href="#sobre-mi" aria-label="Laura Beltrán, inicio"></a></div><div class="ch "><div class="bgw"><img class="bg" src="img/p4_1.webp" width="1920" height="2777" alt="" loading=lazy><div class="mu" style="--x:1156;--y:686;--w:615;--h:814"><img class="mubg" src="img/mu_mar_bg.webp" alt="" loading="lazy"><img class="pc a-bob2" src="img/mu_mar_r16.webp" alt="" loading="lazy" decoding="async" style="--px:53.548%;--py:4.759%;--pw:47.984%;--ph:31.666%;--d:7.5s;--dl:-0.0s;--ox:50%;--oy:50%"><img class="pc a-bob" src="img/mu_mar_r19.webp" alt="" loading="lazy" decoding="async" style="--px:8.065%;--py:26.541%;--pw:43.387%;--ph:49.176%;--d:6s;--dl:-1.37s;--ox:50%;--oy:50%"><img class="pc a-sway" src="img/mu_mar_r15.webp" alt="" loading="lazy" decoding="async" style="--px:-8.790%;--py:82.733%;--pw:23.548%;--ph:20.256%;--d:6.5s;--dl:-4.11s;--ox:50%;--oy:100%"><img class="pc a-sway" src="img/mu_mar_r18.webp" alt="" loading="lazy" decoding="async" style="--px:28.387%;--py:66.809%;--pw:23.145%;--ph:20.988%;--d:5.2s;--dl:-0.28s;--ox:50%;--oy:100%"><img class="pc a-sway" src="img/mu_mar_r17.webp" alt="" loading="lazy" decoding="async" style="--px:50.726%;--py:65.650%;--pw:25.000%;--ph:20.378%;--d:4.6s;--dl:-2.25s;--ox:50%;--oy:100%"><img class="pc a-swim" src="img/mu_mar_r14.webp" alt="" loading="lazy" decoding="async" style="--px:60.968%;--py:50.092%;--pw:19.274%;--ph:12.386%;--d:5.5s;--dl:-2.72s;--ox:50%;--oy:50%"><img class="pc a-spin" src="img/mu_mar_r20.webp" alt="" loading="lazy" decoding="async" style="--px:3.548%;--py:70.165%;--pw:15.000%;--ph:11.775%;--d:4.8s;--dl:-4.79s;--ox:50%;--oy:50%"></div><div class="mu" style="--x:149;--y:1413;--w:948;--h:416"><img class="mubg" src="img/mu_selva_bg.webp" alt="" loading="lazy"><img class="pc a-pad" src="img/mu_selva_r7.webp" alt="" loading="lazy" decoding="async" style="--px:34.263%;--py:65.348%;--pw:11.263%;--ph:12.470%;--d:7s;--dl:-0.0s;--ox:50%;--oy:60%"><img class="pc a-pad" src="img/mu_selva_r6.webp" alt="" loading="lazy" decoding="async" style="--px:40.000%;--py:71.583%;--pw:14.737%;--ph:16.427%;--d:6s;--dl:-1.37s;--ox:50%;--oy:60%"><img class="pc a-pad" src="img/mu_selva_r9.webp" alt="" loading="lazy" decoding="async" style="--px:64.263%;--py:62.470%;--pw:13.474%;--ph:14.748%;--d:6.5s;--dl:-2.74s;--ox:50%;--oy:60%"><img class="pc a-pad" src="img/mu_selva_r4.webp" alt="" loading="lazy" decoding="async" style="--px:33.263%;--py:82.974%;--pw:11.263%;--ph:14.149%;--d:5.5s;--dl:-4.11s;--ox:50%;--oy:60%"><img class="pc a-pad" src="img/mu_selva_r5.webp" alt="" loading="lazy" decoding="async" style="--px:57.263%;--py:72.782%;--pw:10.737%;--ph:13.669%;--d:6.8s;--dl:-5.48s;--ox:50%;--oy:60%"><img class="pc a-pad" src="img/mu_selva_r8.webp" alt="" loading="lazy" decoding="async" style="--px:85.737%;--py:47.722%;--pw:11.263%;--ph:14.149%;--d:6.2s;--dl:-0.65s;--ox:50%;--oy:60%"><img class="pc a-bob2" src="img/mu_selva_r3.webp" alt="" loading="lazy" decoding="async" style="--px:25.474%;--py:46.643%;--pw:13.737%;--ph:17.026%;--d:5s;--dl:-3.22s;--ox:50%;--oy:50%"><img class="pc a-hop" src="img/mu_selva_r1.webp" alt="" loading="lazy" decoding="async" style="--px:76.105%;--py:81.295%;--pw:8.000%;--ph:14.149%;--d:6s;--dl:-3.59s;--ox:50%;--oy:100%"><img class="pc a-bob" src="img/mu_selva_r10.webp" alt="" loading="lazy" decoding="async" style="--px:40.526%;--py:14.149%;--pw:27.737%;--ph:53.357%;--d:5.5s;--dl:-5.46s;--ox:50%;--oy:50%"><img class="pc a-tilt" src="img/mu_selva_r2.webp" alt="" loading="lazy" decoding="async" style="--px:85.263%;--py:20.504%;--pw:11.263%;--ph:20.983%;--d:4.5s;--dl:-3.33s;--ox:45%;--oy:95%"><img class="pc a-sway2" src="img/mu_selva_r11.webp" alt="" loading="lazy" decoding="async" style="--px:-1.474%;--py:69.904%;--pw:25.737%;--ph:32.374%;--d:6s;--dl:-1.7s;--ox:50%;--oy:100%"><img class="pc a-sway2" src="img/mu_selva_r12.webp" alt="" loading="lazy" decoding="async" style="--px:86.526%;--py:69.305%;--pw:19.474%;--ph:32.974%;--d:5.4s;--dl:-4.27s;--ox:50%;--oy:100%"></div></div><div class="t mon" style="--y:911.6;--s:243.0;--lh:350.6;color:#fff6e3;--x:579.4;font-weight:900" data-i="mar">MAR</div><div class="t mon" style="--y:2307.2;--s:207.1;--lh:298.9;color:#fff6e3;--x:151.8;font-weight:900" data-i="selva">SELVA</div></div></main>
+<footer class="ch foot">
+<img class="bg" src="img/footer.webp" width="1920" height="261" alt="" loading="lazy">
+<a class="hot" href="#sobre-mi" style="--x:70;--y:30;--w:180;--h:180" aria-label="Laura Beltrán, inicio"></a>
+<a class="circ mail" id="mail" href="#" role="button" style="--x:1418;--y:62;--w:124;--h:124" aria-label="Escribir un correo a {{CORREO}}" title="{{CORREO}}"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 7l8 6 8-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></a>
+<a class="hot" href="https://wa.me/{{WA}}" target="_blank" rel="noopener" style="--x:1560;--y:62;--w:124;--h:124" aria-label="WhatsApp {{WA_VISIBLE}}" title="WhatsApp {{WA_VISIBLE}}"></a>
+<a class="hot" href="https://www.behance.net/{{BEHANCE}}" target="_blank" rel="noopener" style="--x:1702;--y:62;--w:124;--h:124" aria-label="Behance {{BEHANCE}}"></a>
+<p class="contact-line">WhatsApp {{WA_VISIBLE}} · {{CORREO}}</p>
+</footer>
+<script>
+const T=__TEXTOS__;
+const ROUTES={"sobre-mi":"v-sobre-mi","branding":"v-branding","galeria":"v-galeria","social-media":"v-social-media","murales":"v-murales"};
+let lang="es";
+try{const s=localStorage.getItem("lb-lang");if(s==="en"||s==="es")lang=s}catch(e){}
+const MOTION=!matchMedia("(prefers-reduced-motion: reduce)").matches;
+if(MOTION)document.documentElement.classList.add("anim");
+function split(el,word){
+  if(!MOTION)return;let i=0;
+  const walk=n=>{[...n.childNodes].forEach(c=>{
+    if(c.nodeType===3){const parts=word?c.textContent.split(/(\s+)/):[...c.textContent];const f=document.createDocumentFragment();
+      parts.forEach(t=>{if(!t)return;if(/^\s+$/.test(t)){f.appendChild(document.createTextNode(t));return}
+        const s=document.createElement("span");s.className=word?"sw":"sl";s.textContent=t;s.style.setProperty("--i",Math.min(i++,word?90:40));f.appendChild(s)});
+      c.replaceWith(f)}
+    else if(c.nodeType===1&&c.tagName!=="BR")walk(c)})};
+  walk(el);
+}
+function prep(el){if(el.classList.contains("copy")){el.classList.add("cp");split(el,true)}else{el.classList.add("ttl");split(el,false)}}
+function apply(){
+  document.documentElement.lang=lang;
+  document.querySelectorAll("[data-i]").forEach(el=>{const v=T[lang][el.dataset.i];if(v==null)return;el.innerHTML=v;if(el.classList.contains("t"))prep(el)});
+  document.querySelectorAll("[data-lang]").forEach(b=>{b.textContent=lang==="es"?"EN":"ES"});
+}
+const io="IntersectionObserver" in window?new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const t=e.target;t.classList.add("in");io.unobserve(t);
+  const n=t.querySelectorAll(".sl,.sw").length;
+  setTimeout(()=>t.classList.add("done"),t.classList.contains("ly")?1200:(t.classList.contains("cp")?Math.min(n,90)*7+1000:Math.min(n,40)*32+900))}),{rootMargin:"0px 0px -8% 0px",threshold:0.12}):null;
+function arm(view){
+  if(!MOTION)return;
+  view.querySelectorAll(".t,.ly,img.rv,img.rvm,.ig").forEach(el=>{el.classList.remove("in","done");if(io)io.observe(el);else el.classList.add("in")});
+}
+const lys=[];document.querySelectorAll(".ly").forEach(l=>{const d=+l.dataset.d;if(d)lys.push([l,d])});
+let tick=false;
+function para(){tick=false;if(!MOTION||innerWidth<=700)return;const vh=innerHeight;
+  for(const [l,d] of lys){if(l.offsetParent===null)continue;const r=l.getBoundingClientRect();if(r.bottom<-200||r.top>vh+200)continue;
+    const off=(r.top+r.height/2-vh/2)-(parseFloat(l.style.getPropertyValue("--py"))||0);l.style.setProperty("--py",Math.max(-30,Math.min(30,-off*d)).toFixed(1)+"px")}}
+addEventListener("scroll",()=>{if(!tick){tick=true;requestAnimationFrame(para)}},{passive:true});
+addEventListener("resize",para);
+function route(scroll){
+  const id=location.hash.slice(1);const v=ROUTES[id]||"v-sobre-mi";
+  document.querySelectorAll(".view").forEach(m=>{const show=m.id===v;const was=!m.hidden;m.hidden=!show;if(show&&(!was||!m.dataset.armed)){m.dataset.armed=1;arm(m)}});
+  requestAnimationFrame(para);
+  document.querySelectorAll(".nav a").forEach(a=>{a.toggleAttribute("aria-current",a.getAttribute("href")==="#"+v.slice(2));if(a.hasAttribute("aria-current"))a.setAttribute("aria-current","page")});
+  if(scroll)window.scrollTo(0,0);
+}
+const INK=["#d98fdc","#cab9eb","#ffeec7","#e0787d","#b48cff","#ff9ccf"];
+function splash(el){
+  if(!MOTION||!el.animate)return;const n=13+Math.floor(Math.random()*5);
+  for(let k=0;k<n;k++){
+    const d=document.createElement("span");d.className="drop";const sz=6+Math.random()*9;
+    d.style.width=sz+"px";d.style.height=sz*(1+Math.random()*.35)+"px";d.style.background=INK[Math.floor(Math.random()*INK.length)];
+    el.appendChild(d);
+    const a=Math.PI*(1.05+Math.random()*.9)+(Math.random()<.35?Math.PI*.9:0);
+    const r=30+Math.random()*40, dx=Math.cos(a)*r*1.4, dy=Math.sin(a)*r, g=26+Math.random()*24;
+    d.animate([{transform:"translate(-50%,-50%) scale(.2)",opacity:1},
+               {transform:`translate(calc(-50% + ${dx*.75}px),calc(-50% + ${dy*.8}px)) scale(1)`,opacity:1,offset:.5},
+               {transform:`translate(calc(-50% + ${dx}px),calc(-50% + ${dy+g}px)) scale(.6,.85)`,opacity:.9,offset:.8},{transform:`translate(calc(-50% + ${dx}px),calc(-50% + ${dy+g+8}px)) scale(.5,.8)`,opacity:0}],
+              {duration:800+Math.random()*400,easing:"cubic-bezier(.2,.7,.4,1)"}).onfinish=()=>d.remove();
+  }
+  el.animate([{transform:"scale(1)"},{transform:"scale(1.12,.9)"},{transform:"scale(.96,1.05)"},{transform:"scale(1)"}],{duration:420,easing:"ease-out"});
+}
+document.addEventListener("click",e=>{const el=e.target.closest(".nav a,.lang,.hot.logo");if(!el)return;
+  const href=el.getAttribute("href"),logo=el.classList.contains("logo");
+  setTimeout(()=>{const v=document.querySelector(".view:not([hidden])");const t=!href||!v?el:(logo?v.querySelector(".hot.logo"):v.querySelector('.nav a[href="'+href+'"]'));if(t)splash(t)},30)});
+document.addEventListener("click",e=>{const m=e.target.closest(".mail");if(!m)return;e.preventDefault();
+  const es=lang==="es",txt=es?"Para: {{CORREO}}\nAsunto: Cotización\n\nHola, estoy interesado en hacer una cotización contigo.\nSaludos.":"To: {{CORREO}}\nSubject: Quote request\n\nHi, I'm interested in getting a quote from you.\nBest regards.";
+  const done=ok=>{let t=document.getElementById("toast");if(!t){t=document.createElement("div");t.id="toast";t.setAttribute("role","status");document.body.appendChild(t)}
+    t.innerHTML=ok?(es?"<b>Correo copiado</b>Pégalo en tu correo y envíalo a {{CORREO}}":"<b>Email copied</b>Paste it in your email and send it to {{CORREO}}"):(es?"<b>Escríbele a Laura</b>{{CORREO}}":"<b>Write to Laura</b>{{CORREO}}");
+    t.classList.add("on");clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove("on"),4200)};
+  const fb=()=>{try{const a=document.createElement("textarea");a.value=txt;a.style.cssText="position:fixed;opacity:0";document.body.appendChild(a);a.select();const ok=document.execCommand("copy");a.remove();done(ok)}catch(_){done(false)}};
+  if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(txt).then(()=>done(true),fb);else fb()});
+document.addEventListener("click",e=>{const b=e.target.closest("[data-lang]");if(!b)return;lang=lang==="es"?"en":"es";try{localStorage.setItem("lb-lang",lang)}catch(_){}apply()});
+document.querySelectorAll(".ig").forEach(ig=>{const tr=ig.querySelector(".ig-track"),dots=[...ig.querySelectorAll(".ig-dots i")],pv=ig.querySelector(".prev"),nx=ig.querySelector(".next"),n=dots.length;
+  const cur=()=>Math.round(tr.scrollLeft/Math.max(tr.clientWidth,1));
+  const upd=()=>{const i=cur();dots.forEach((d,k)=>d.classList.toggle("on",k===i));pv.hidden=i<=0;nx.hidden=i>=n-1};
+  const go=d=>{const i=Math.max(0,Math.min(n-1,cur()+d));tr.scrollTo({left:i*tr.clientWidth,behavior:MOTION?"smooth":"auto"})};
+  pv.addEventListener("click",()=>go(-1));nx.addEventListener("click",()=>go(1));
+  tr.addEventListener("keydown",e=>{if(e.key==="ArrowRight"){e.preventDefault();go(1)}else if(e.key==="ArrowLeft"){e.preventDefault();go(-1)}});
+  tr.addEventListener("scroll",()=>requestAnimationFrame(upd),{passive:true});
+  const fr=ig.querySelector(".ig-frame"),first=tr.querySelector("img");const warm=()=>{tr.querySelectorAll("img").forEach(im=>im.loading="eager");const ok=()=>ig.classList.add("ok");if(first.complete&&first.naturalWidth)ok();else{first.addEventListener("load",ok,{once:true});first.addEventListener("error",ok,{once:true});setTimeout(ok,4000)}};
+  if(fr.complete&&fr.naturalWidth)warm();else fr.addEventListener("load",warm,{once:true});
+  addEventListener("resize",()=>{tr.scrollLeft=cur()*tr.clientWidth});upd()});
+if("IntersectionObserver" in window){const mo=new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle("on",e.isIntersecting)),{rootMargin:"100px 0px"});document.querySelectorAll(".mu").forEach(m=>mo.observe(m))}else document.querySelectorAll(".mu").forEach(m=>m.classList.add("on"));
+addEventListener("hashchange",()=>route(true));
+apply();route(false);
+</script>
+</body>
+</html>

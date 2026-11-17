@@ -1,0 +1,282 @@
+# Panel de edición del portafolio (Decap CMS). Se abre en /admin
+backend:
+  name: github
+  repo: lauradbeltrana-dev/portafolio-laura
+  branch: main
+  commit_messages:
+    update: "Actualiza {{collection}} desde el panel"
+    uploadMedia: "Sube {{path}} desde el panel"
+locale: es
+media_folder: img/subidas
+public_folder: /img/subidas
+
+collections:
+  - name: contenido
+    label: "Contenido de la página"
+    editor: {preview: false}
+    files:
+      - name: textos
+        label: "Textos y contacto"
+        file: content/textos.json
+        fields:
+          - name: contacto
+            label: "Contacto"
+            widget: object
+            collapsed: false
+            fields:
+              - {name: whatsapp, label: "WhatsApp (solo números con indicativo)", widget: string, hint: "Ejemplo: 573156456363"}
+              - {name: whatsapp_visible, label: "WhatsApp como se muestra", widget: string, hint: "Ejemplo: +57 315 645 6363"}
+              - {name: correo, label: "Correo", widget: string}
+              - {name: behance, label: "Usuario de Behance", widget: string}
+          - name: es
+            label: "Español"
+            widget: object
+            collapsed: false
+            fields:
+              - name: inicio
+                label: "Portada"
+                widget: object
+                collapsed: true
+                fields:
+                  - {name: titulo, label: "Título grande", widget: string}
+                  - {name: anio, label: "Año", widget: string}
+              - name: menu
+                label: "Menú"
+                widget: object
+                collapsed: true
+                fields:
+                  - {name: sobre_mi, label: "Sobre mí", widget: string}
+                  - {name: branding, label: "Branding", widget: string}
+                  - {name: social, label: "Social media", widget: string}
+                  - {name: murales, label: "Murales", widget: string}
+                  - {name: galeria, label: "Galería", widget: string}
+              - name: sobre_mi
+                label: "Sobre mí"
+                widget: object
+                collapsed: true
+                fields:
+                  - {name: saludo, label: "Saludo", widget: string}
+                  - {name: nombre, label: "Nombre", widget: string}
+                  - {name: apellido, label: "Apellido", widget: string}
+                  - {name: bio, label: "Presentación", widget: text, hint: "Deja una línea en blanco entre párrafos."}
+                  - {name: educacion_titulo, label: "Título de Educación", widget: string}
+                  - name: educacion
+                    label: "Educación"
+                    label_singular: "estudio"
+                    widget: list
+                    summary: "{{fields.lugar}}"
+                    fields:
+                      - {name: lugar, label: "Institución y años", widget: string}
+                      - {name: titulo, label: "Título obtenido", widget: string}
+                  - {name: experiencia_titulo, label: "Título de Experiencia", widget: string}
+                  - name: experiencia
+                    label: "Experiencia"
+                    label_singular: "trabajo"
+                    widget: list
+                    summary: "{{fields.empresa}}"
+                    fields:
+                      - {name: empresa, label: "Empresa", widget: string}
+                      - {name: cargo, label: "Cargo y años", widget: string}
+                      - {name: tareas, label: "Tareas", label_singular: "tarea", widget: list, field: {name: tarea, label: "Tarea", widget: text}}
+                  - {name: skills_titulo, label: "Título de Skills", widget: string}
+                  - {name: skills, label: "Skills y software", label_singular: "skill", widget: list, field: {name: skill, label: "Skill", widget: string}}
+              - name: branding
+                label: "Branding"
+                widget: object
+                collapsed: true
+                fields:
+                  - {name: titulo, label: "Título de la sección", widget: string}
+                  - {name: proyecto_1, label: "Nombre del primer proyecto", widget: string}
+                  - {name: proyecto_2, label: "Nombre del segundo proyecto", widget: string}
+              - name: social
+                label: "Social media"
+                widget: object
+                collapsed: true
+                fields:
+                  - {name: titulo, label: "Título de la sección", widget: string}
+              - name: murales
+                label: "Murales"
+                widget: object
+                collapsed: true
+                fields:
+                  - {name: titulo, label: "Título de la sección", widget: string}
+                  - {name: mural_1, label: "Nombre del primer mural", widget: string}
+                  - {name: mural_2, label: "Nombre del segundo mural", widget: string}
+              - name: galeria
+                label: "Galería"
+                widget: object
+                collapsed: true
+                fields:
+                  - {name: titulo, label: "Título de la sección", widget: string}
+                  - name: color
+                    label: "Lápices de color"
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - {name: linea_1, label: "Primera línea (letra delgada)", widget: text, hint: "Si necesitas dos renglones, pon un salto de línea."}
+                      - {name: linea_2, label: "Palabra grande", widget: string}
+                      - {name: texto, label: "Texto descriptivo", widget: text}
+                  - name: dibujo
+                    label: "Lápices de dibujo"
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - {name: linea_1, label: "Primera línea (letra delgada)", widget: text, hint: "Si necesitas dos renglones, pon un salto de línea."}
+                      - {name: linea_2, label: "Palabra grande", widget: string}
+                      - {name: texto, label: "Texto descriptivo", widget: text}
+                  - name: gouache
+                    label: "Acuarelas y gouache"
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - {name: linea_1, label: "Primera línea (letra delgada)", widget: text, hint: "Si necesitas dos renglones, pon un salto de línea."}
+                      - {name: linea_2, label: "Palabra grande", widget: string}
+                      - {name: texto, label: "Texto descriptivo", widget: text}
+                  - name: texturas
+                    label: "Dibujo de texturas"
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - {name: linea_1, label: "Primera línea (letra delgada)", widget: text, hint: "Si necesitas dos renglones, pon un salto de línea."}
+                      - {name: linea_2, label: "Palabra grande", widget: string}
+                      - {name: texto, label: "Texto descriptivo", widget: text}
+                  - name: firebee
+                    label: "Firebee"
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - {name: linea_1, label: "Primera línea (letra delgada)", widget: text, hint: "Si necesitas dos renglones, pon un salto de línea."}
+                      - {name: linea_2, label: "Palabra grande", widget: string}
+                  - name: longplay
+                    label: "Long Play"
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - {name: linea_1, label: "Primera línea (letra delgada)", widget: text, hint: "Si necesitas dos renglones, pon un salto de línea."}
+                      - {name: linea_2, label: "Palabra grande", widget: string}
+          - name: en
+            label: "Inglés (English)"
+            widget: object
+            collapsed: true
+            fields:
+              - name: inicio
+                label: "Portada"
+                widget: object
+                collapsed: true
+                fields:
+                  - {name: titulo, label: "Título grande", widget: string}
+                  - {name: anio, label: "Año", widget: string}
+              - name: menu
+                label: "Menú"
+                widget: object
+                collapsed: true
+                fields:
+                  - {name: sobre_mi, label: "Sobre mí", widget: string}
+                  - {name: branding, label: "Branding", widget: string}
+                  - {name: social, label: "Social media", widget: string}
+                  - {name: murales, label: "Murales", widget: string}
+                  - {name: galeria, label: "Galería", widget: string}
+              - name: sobre_mi
+                label: "Sobre mí"
+                widget: object
+                collapsed: true
+                fields:
+                  - {name: saludo, label: "Saludo", widget: string}
+                  - {name: nombre, label: "Nombre", widget: string}
+                  - {name: apellido, label: "Apellido", widget: string}
+                  - {name: bio, label: "Presentación", widget: text, hint: "Deja una línea en blanco entre párrafos."}
+                  - {name: educacion_titulo, label: "Título de Educación", widget: string}
+                  - name: educacion
+                    label: "Educación"
+                    label_singular: "estudio"
+                    widget: list
+                    summary: "{{fields.lugar}}"
+                    fields:
+                      - {name: lugar, label: "Institución y años", widget: string}
+                      - {name: titulo, label: "Título obtenido", widget: string}
+                  - {name: experiencia_titulo, label: "Título de Experiencia", widget: string}
+                  - name: experiencia
+                    label: "Experiencia"
+                    label_singular: "trabajo"
+                    widget: list
+                    summary: "{{fields.empresa}}"
+                    fields:
+                      - {name: empresa, label: "Empresa", widget: string}
+                      - {name: cargo, label: "Cargo y años", widget: string}
+                      - {name: tareas, label: "Tareas", label_singular: "tarea", widget: list, field: {name: tarea, label: "Tarea", widget: text}}
+                  - {name: skills_titulo, label: "Título de Skills", widget: string}
+                  - {name: skills, label: "Skills y software", label_singular: "skill", widget: list, field: {name: skill, label: "Skill", widget: string}}
+              - name: branding
+                label: "Branding"
+                widget: object
+                collapsed: true
+                fields:
+                  - {name: titulo, label: "Título de la sección", widget: string}
+                  - {name: proyecto_1, label: "Nombre del primer proyecto", widget: string}
+                  - {name: proyecto_2, label: "Nombre del segundo proyecto", widget: string}
+              - name: social
+                label: "Social media"
+                widget: object
+                collapsed: true
+                fields:
+                  - {name: titulo, label: "Título de la sección", widget: string}
+              - name: murales
+                label: "Murales"
+                widget: object
+                collapsed: true
+                fields:
+                  - {name: titulo, label: "Título de la sección", widget: string}
+                  - {name: mural_1, label: "Nombre del primer mural", widget: string}
+                  - {name: mural_2, label: "Nombre del segundo mural", widget: string}
+              - name: galeria
+                label: "Galería"
+                widget: object
+                collapsed: true
+                fields:
+                  - {name: titulo, label: "Título de la sección", widget: string}
+                  - name: color
+                    label: "Lápices de color"
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - {name: linea_1, label: "Primera línea (letra delgada)", widget: text, hint: "Si necesitas dos renglones, pon un salto de línea."}
+                      - {name: linea_2, label: "Palabra grande", widget: string}
+                      - {name: texto, label: "Texto descriptivo", widget: text}
+                  - name: dibujo
+                    label: "Lápices de dibujo"
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - {name: linea_1, label: "Primera línea (letra delgada)", widget: text, hint: "Si necesitas dos renglones, pon un salto de línea."}
+                      - {name: linea_2, label: "Palabra grande", widget: string}
+                      - {name: texto, label: "Texto descriptivo", widget: text}
+                  - name: gouache
+                    label: "Acuarelas y gouache"
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - {name: linea_1, label: "Primera línea (letra delgada)", widget: text, hint: "Si necesitas dos renglones, pon un salto de línea."}
+                      - {name: linea_2, label: "Palabra grande", widget: string}
+                      - {name: texto, label: "Texto descriptivo", widget: text}
+                  - name: texturas
+                    label: "Dibujo de texturas"
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - {name: linea_1, label: "Primera línea (letra delgada)", widget: text, hint: "Si necesitas dos renglones, pon un salto de línea."}
+                      - {name: linea_2, label: "Palabra grande", widget: string}
+                      - {name: texto, label: "Texto descriptivo", widget: text}
+                  - name: firebee
+                    label: "Firebee"
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - {name: linea_1, label: "Primera línea (letra delgada)", widget: text, hint: "Si necesitas dos renglones, pon un salto de línea."}
+                      - {name: linea_2, label: "Palabra grande", widget: string}
+                  - name: longplay
+                    label: "Long Play"
+                    widget: object
+                    collapsed: true
+                    fields:
+                      - {name: linea_1, label: "Primera línea (letra delgada)", widget: text, hint: "Si necesitas dos renglones, pon un salto de línea."}
+                      - {name: linea_2, label: "Palabra grande", widget: string}
